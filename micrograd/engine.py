@@ -5,3 +5,13 @@ class Value:
 
     def __repr__(self) -> str:
         return f"Value(data={self.data})"
+
+    def __add__(self, operand) -> int:
+        result = self.data + operand.data
+
+        return result
+
+    def __sub__(self, operand) -> int:
+        result = self.data - operand.data
+
+        return result
