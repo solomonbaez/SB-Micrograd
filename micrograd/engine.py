@@ -15,3 +15,13 @@ class Value:
         result = self.data - operand.data
 
         return result
+
+    def __mul__(self, operand) -> int:
+        result = self.data * operand.data
+
+        return result
+
+    def __div__(self, operand) -> int:
+        result = self.data / operand.data
+
+        return result
